@@ -5,6 +5,7 @@
        
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>WebStudio</title>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -67,7 +68,7 @@
                <section class="section-hero">
                   <div class="container">
                      <h1 class="section-hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-                     <button class="section-hero-btn" type="button">Заказать услугу</button>
+                     <button class="section-hero-btn" type="button" data-modal-open>Заказать услугу</button>
                   </div>
               </section>
                <section class="section-primery">
@@ -150,13 +151,32 @@
                         <h2 class="section-description-title">Чем мы занимаемся</h2>
                         <ul class="work-list list">
                            <li>
-                              <img src="./images/img1.jpg" alt="Писание верстки" width="370" />
+                              <div class="section-description-img">
+                                 <img src="./images/img1.jpg" alt="Писание верстки" width="370" />
+                                 
+                                 <p class="section-description-text">Десктопные приложения</p>
+                              </div>
+                             
+                            
                            </li>
                            <li>
-                              <img src="./images/img2.jpg" alt="Адаптация тел" width="370" />
+                              <div class="section-description-img">
+                                 <img src="./images/img2.jpg" alt="Адаптация тел" width="370" />
+                              
+                              <p class="section-description-text">Мобильные приложения</p>
+                           </div>
+                              
+                              
+                              
                            </li>
                            <li>
-                              <img src="./images/img3.jpg" alt="Колоризация" width="370" />
+                              <div class="section-description-img">
+                                 <img src="./images/img3.jpg" alt="Колоризация" width="370" />
+                                 
+                                 <p class="section-description-text">Дизайнерские решения</p>
+                              </div>
+                              
+                              
                            </li>
                         </ul>
                      </div>
@@ -376,6 +396,7 @@
                   </div>
                
                </section>
+              
         </main>
                   <footer class="footer footer-cursor"> 
                      <div class="container">
@@ -439,4 +460,18 @@
                         
                      
                   </footer>
+
+                  <div class="backdrop is-hidden" data-modal>
+                     <div class="modal">
+                        <button type="button" class="modal-btn"data-modal-close>
+                           <svg class="modal-x" >
+                              <use href="./images/symbol-defs.svg#icon-close-x"></use>
+                           </svg>
+                        </button>
+                     </div>
+                  </div>
+
+                  <script src="./js/modal.js"></script>
+
+      
      </body>
